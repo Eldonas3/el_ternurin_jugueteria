@@ -1,0 +1,75 @@
+CRITICAL - 2024-05-15 04:41:04 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::findAll()
+in APPPATH\Models\EmpresaModel.php on line 49.
+ 1 APPPATH\Controllers\EmpresaController.php(12): App\Models\EmpresaModel->obtener_empresas_precios()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmpresaController->obtener_empresas_precios()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpresaController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_PROVEEDORES\\api\\public\\index.php')
+ERROR - 2024-05-15 17:37:51 --> ErrorException: pg_query(): Query failed: ERROR:  el argumento de WHERE debe ser de tipo boolean, no tipo text
+LINE 5: WHERE CONCAT(repartidor.nombre, ' ', repartidor.apellido_pat...
+              ^ in D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\Universidad\\...', 187)
+#1 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Database\Postgre\Connection.php(187): pg_query(Object(PgSql\Connection), 'SELECT "entrega...')
+#2 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT "entrega...')
+#3 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "entrega...')
+#4 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "entrega...', Array, false)
+#5 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\app\Models\EmpresaModel.php(124): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\app\Controllers\EmpresaController.php(72): App\Models\EmpresaModel->obtener_entregas_repartidor()
+#7 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\CodeIgniter.php(919): App\Controllers\EmpresaController->obtener_entregas_repartidor()
+#8 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpresaController))
+#9 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#12 {main}
+CRITICAL - 2024-05-15 17:37:51 --> pg_query(): Query failed: ERROR:  el argumento de WHERE debe ser de tipo boolean, no tipo text
+LINE 5: WHERE CONCAT(repartidor.nombre, ' ', repartidor.apellido_pat...
+              ^
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "entrega"."id", "empresa"."nombre" AS "nombre_empresa"
+FROM "entrega"
+JOIN "repartidor" ON "entrega"."repartidor_encargado" = "repartidor"."id"
+JOIN "empresa" ON "repartidor"."empresa_empleadora" = "empresa"."id"
+WHERE CONCAT(repartidor.nombre, \' \', repartidor.apellido_paterno, \' \', repartidor.apellido_materno)', [], false)
+ 2 APPPATH\Models\EmpresaModel.php(124): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\EmpresaController.php(72): App\Models\EmpresaModel->obtener_entregas_repartidor()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmpresaController->obtener_entregas_repartidor()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpresaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_PROVEEDORES\\api\\public\\index.php')
+ERROR - 2024-05-15 17:46:18 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «repartidor»
+LINE 1: ...CT &quot;entrega&quot;.&quot;id&quot;, CONCAT(repartidor.nombre,  &quot;, &quot;repartidor...
+                                                             ^ in D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\Universidad\\...', 187)
+#1 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Database\Postgre\Connection.php(187): pg_query(Object(PgSql\Connection), 'SELECT "entrega...')
+#2 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT "entrega...')
+#3 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "entrega...')
+#4 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "entrega...', Array, false)
+#5 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\app\Models\EmpresaModel.php(141): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\app\Controllers\EmpresaController.php(84): App\Models\EmpresaModel->obtener_entregas_hechas_por_empresa()
+#7 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\CodeIgniter.php(919): App\Controllers\EmpresaController->obtener_entregas_hechas_por_empresa()
+#8 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpresaController))
+#9 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_PROVEEDORES\api\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#12 {main}
+CRITICAL - 2024-05-15 17:46:18 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «repartidor»
+LINE 1: ...CT &quot;entrega&quot;.&quot;id&quot;, CONCAT(repartidor.nombre,  &quot;, &quot;repartidor...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "entrega"."id", CONCAT(repartidor.nombre,  ", "repartidor"."apellido_paterno",  ", repartidor.apellido_materno) AS nombre_repartidor
+FROM "entrega"
+JOIN "repartidor" ON "entrega"."repartidor_encargado" = "repartidor"."id"
+JOIN "empresa" ON "repartidor"."empresa_empleadora" = "empresa"."id"
+WHERE "empresa"."nombre" = :empresa.nombre:
+AND "entrega"."status" = :entrega.status:', [...], false)
+ 2 APPPATH\Models\EmpresaModel.php(141): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\EmpresaController.php(84): App\Models\EmpresaModel->obtener_entregas_hechas_por_empresa()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmpresaController->obtener_entregas_hechas_por_empresa()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpresaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_PROVEEDORES\\api\\public\\index.php')

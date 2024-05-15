@@ -1,0 +1,137 @@
+CRITICAL - 2024-05-10 17:03:03 --> Call to a member function getNumeroEmpresasPorJuguete() on null
+in APPPATH\Controllers\JugueteController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JugueteController->getNumeroEmpresasPorJuguete()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_JUGUETES\\api\\public\\index.php')
+CRITICAL - 2024-05-10 17:10:10 --> Call to a member function getNumeroEmpresasPorJuguete() on null
+in APPPATH\Controllers\JugueteController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JugueteController->getNumeroEmpresasPorJuguete()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_JUGUETES\\api\\public\\index.php')
+CRITICAL - 2024-05-10 17:10:15 --> Call to a member function getNumeroEmpresasPorJuguete() on null
+in APPPATH\Controllers\JugueteController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JugueteController->getNumeroEmpresasPorJuguete()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_JUGUETES\\api\\public\\index.php')
+CRITICAL - 2024-05-10 17:10:16 --> Call to a member function getNumeroEmpresasPorJuguete() on null
+in APPPATH\Controllers\JugueteController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JugueteController->getNumeroEmpresasPorJuguete()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_JUGUETES\\api\\public\\index.php')
+CRITICAL - 2024-05-10 17:10:24 --> Call to a member function getNumeroEmpresasPorJuguete() on null
+in APPPATH\Controllers\JugueteController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JugueteController->getNumeroEmpresasPorJuguete()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_JUGUETES\\api\\public\\index.php')
+CRITICAL - 2024-05-10 17:10:38 --> Call to a member function getNumeroEmpresasPorJuguete() on null
+in APPPATH\Controllers\JugueteController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JugueteController->getNumeroEmpresasPorJuguete()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_JUGUETES\\api\\public\\index.php')
+CRITICAL - 2024-05-10 17:14:45 --> Call to a member function getNumeroEmpresasPorJuguete() on null
+in APPPATH\Controllers\JugueteController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JugueteController->getNumeroEmpresasPorJuguete()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_JUGUETES\\api\\public\\index.php')
+CRITICAL - 2024-05-10 17:27:40 --> Call to a member function getJuguetePorNombre() on null
+in APPPATH\Controllers\JugueteController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JugueteController->getJuguetePorNombre()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_JUGUETES\\api\\public\\index.php')
+ERROR - 2024-05-10 17:30:58 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "nombre"...', Array, false)
+#3 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\app\Models\JugueteModel.php(51): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\app\Controllers\JugueteController.php(11): App\Models\JugueteModel->getJuguetePorNombre()
+#5 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\CodeIgniter.php(919): App\Controllers\JugueteController->getJuguetePorNombre()
+#6 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+#7 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#10 {main}
+CRITICAL - 2024-05-10 17:30:58 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "nombre", "descripcion", "categoria", "precio", "cantidad_disponible"
+FROM "juguete"
+WHERE "nombre" = :nombre:', [...], false)
+ 3 APPPATH\Models\JugueteModel.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\JugueteController.php(11): App\Models\JugueteModel->getJuguetePorNombre()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JugueteController->getJuguetePorNombre()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_JUGUETES\\api\\public\\index.php')
+ERROR - 2024-05-10 17:41:40 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "nombre"...', Array, false)
+#3 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\app\Models\JugueteModel.php(51): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\app\Controllers\JugueteController.php(11): App\Models\JugueteModel->getJuguetePorNombre()
+#5 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\CodeIgniter.php(919): App\Controllers\JugueteController->getJuguetePorNombre()
+#6 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+#7 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#10 {main}
+CRITICAL - 2024-05-10 17:41:40 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "nombre", "descripcion", "categoria", "precio", "cantidad_disponible"
+FROM "juguete"
+WHERE "nombre" = :nombre:', [...], false)
+ 3 APPPATH\Models\JugueteModel.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\JugueteController.php(11): App\Models\JugueteModel->getJuguetePorNombre()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JugueteController->getJuguetePorNombre()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_JUGUETES\\api\\public\\index.php')
+ERROR - 2024-05-10 17:41:44 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "nombre"...', Array, false)
+#3 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\app\Models\JugueteModel.php(51): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\app\Controllers\JugueteController.php(11): App\Models\JugueteModel->getJuguetePorNombre()
+#5 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\CodeIgniter.php(919): App\Controllers\JugueteController->getJuguetePorNombre()
+#6 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+#7 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\API_JUGUETES\api\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#10 {main}
+CRITICAL - 2024-05-10 17:41:44 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT "nombre", "descripcion", "categoria", "precio", "cantidad_disponible"
+FROM "juguete"
+WHERE "nombre" = :nombre:', [...], false)
+ 3 APPPATH\Models\JugueteModel.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\JugueteController.php(11): App\Models\JugueteModel->getJuguetePorNombre()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JugueteController->getJuguetePorNombre()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JugueteController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\API_JUGUETES\\api\\public\\index.php')
