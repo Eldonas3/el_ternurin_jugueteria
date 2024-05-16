@@ -8,4 +8,12 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+
+    public function agregar_juguete(){
+        return view('envios/agregar_juguetes');
+    }
+
+    public function ver_juguetes(){
+        return view('envios/ver_juguetes');
+    }
 }

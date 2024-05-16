@@ -135,4 +135,13 @@ class JugueteModel extends Model
         return $query->getResult();
     }
 
+    // 9.- Retorna todos los nombres de los juguetes
+    public function obtener_juguetes(){
+        $db = db_connect();
+        $sql = $db->table('juguete')
+        ->select('nombre');
+        $query = $sql->get();
+        return $query->getResult();
+    }
+
 }

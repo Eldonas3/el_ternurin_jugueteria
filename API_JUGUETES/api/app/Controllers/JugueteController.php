@@ -120,5 +120,17 @@ class JugueteController extends Controller{
 
         $response->send();
     }
+
+    // 9.-
+    public function obtener_juguetes(){
+        $model = model('JugueteModel');
+        $data['datos'] = $model->obtener_juguetes();
+        $response = response();
+        $response->setStatusCode(Response::HTTP_OK);
+        $response->setBody(json_encode($data));
+        $response->setHeader('Content-Type','text/json');
+        $response->noCache();
+        $response->send();
+    }
     
 }
