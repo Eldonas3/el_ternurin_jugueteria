@@ -10,9 +10,20 @@
 
     <div id="app">
         <h1>Listado de Juguetes</h1>
-        <ul>
-            <li v-for="(juguete, index) in juguetes" :key="index">{{ juguete }}</li>
-        </ul>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre del Juguete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(juguete, index) in juguetes" :key="index">
+                    <td>{{ index + 1 }}</td>
+                    <td>{{ juguete }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     
 </body>

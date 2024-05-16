@@ -14,6 +14,8 @@ class Home extends BaseController
     }
 
     public function ver_juguetes(){
+        header('Access-Control-Allow-Origin: *');
         return view('envios/ver_juguetes');
     }
+    //http://localhost/api_juguetes/api/juguetes/obtener_nombres_juguetes
 }
