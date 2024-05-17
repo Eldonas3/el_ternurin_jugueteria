@@ -142,4 +142,14 @@ class EmpresaModel extends Model
         return $query->getResult();         
     }     
 
+        // 8.- Obtiene todos los nombres de las empresas de envios
+    public function obtener_nombre_empresas(){
+        $request = request();
+        $db = db_connect();
+        $sql = $db->table('empresa')
+        ->select('nombre');
+        $query = $sql->get();
+        return $query->getResult();    
+    }
+
 }

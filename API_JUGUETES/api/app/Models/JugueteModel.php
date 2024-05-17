@@ -144,4 +144,13 @@ class JugueteModel extends Model
         return $query->getResult();
     }
 
+        // 10.- Retorna todos los nombres de los proveedores
+        public function obtener_nombres_proveedores(){
+            $db = db_connect();
+            $sql = $db->table('proveedores')
+            ->select('nombre');
+            $query = $sql->get();
+            return $query->getResult();        
+        }
+
 }

@@ -74,6 +74,11 @@
                     <td>/empresa/api/obtener_entregas_empresa</td>
                     <td>retorna todas la entregas hechas por una empresa en especifico</td>
                 </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>/empresa/api/nombres_empresas</td>
+                    <td>Obtiene todos los nombres de las empresas de envios</td>
+                </tr>
                 <!-- Agrega más filas según sea necesario -->
             </tbody>
         </table>

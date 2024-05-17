@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jugueteria El Ternurin</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
 
     <div id="app">
         <h1>Agregar juguetes</h1>
-        <form action="<?=base_url('juguetes/agregarjuguetes'); ?>" method="post">
-            <input type="text" name="campo1"></input>
-            <select name="campo2">
-                <option v-for="(juguete, index) in juguetes" :key="index"> {{ juguete }} </option>   
+        <form @submit.prevent="submitForm">
+            <select v-model="selectedJuguete">
+                <option v-for="(juguete, index) in juguetes" :key="index" :value="juguete.nombre"> 
+                    {{ juguete.nombre }} 
+                </option>
             </select>
-            <input type="submit">
+            <input type="submit" value="Agregar Juguete">
         </form>
     </div>
     
@@ -23,9 +25,10 @@
 
 <script>
     new Vue({
-        el:'#app',
+        el: '#app',
         data: {
-            juguetes:[],
+            juguetes: [],
+            selectedJuguete: ''
         },
         mounted() {
             this.fetchData();
@@ -39,9 +42,19 @@
                 } catch (error) {
                     console.error('Error al recuperar datos');
                 }
+            },
+            async submitForm() {
+                try {
+                    const response = await axios.post('http://localhost:8080/api/insertar_juguete', {
+                        nombre: this.selectedJuguete
+                    });
+                    console.log(response.data);
+                } catch (error) {
+                    console.error(error);
+                }
             }
         }
-    })
+    });
 </script>
 
 </html>

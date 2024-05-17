@@ -132,5 +132,17 @@ class JugueteController extends Controller{
         $response->noCache();
         $response->send();
     }
+
+        // 10.-
+        public function obtener_nombres_proveedores(){
+            $model = model('JugueteModel');
+            $data['datos'] = $model->obtener_nombres_proveedores();
+            $response = response();
+            $response->setStatusCode(Response::HTTP_OK);
+            $response->setBody(json_encode($data));
+            $response->setHeader('Content-Type','text/json');
+            $response->noCache();
+            $response->send();        
+        }
     
 }

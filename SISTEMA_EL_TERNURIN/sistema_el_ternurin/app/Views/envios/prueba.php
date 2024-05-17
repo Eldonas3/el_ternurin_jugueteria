@@ -3,27 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado de Juguetes</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <title>Jugueteria El Ternurin</title>
+    <script src="https://cnd.jsdelivr.net/npm/vue@2"></script>
 </head>
 <body>
 
     <div id="app">
-        <h1>Listado de Juguetes</h1>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Nombre del Juguete</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="(juguete, index) in juguetes" :key="index">
-                    <td>{{ index + 1 }}</td>
-                    <td>{{ juguete.nombre }}</td>
-                </tr>
-            </tbody>
-        </table>
+        <h1>Agregar juguetes</h1>
+        <form action="<?=base_url('juguetes/agregarjuguetes'); ?>" method="post">
+            <input type="text" name="campo1"></input>
+            <select name="campo2">
+                <option v-for="(juguetes, index) in juguetes" :key="index"> {{ juguetes.juguete }} </option>   
+            </select>
+            <input type="submit">
+        </form>
     </div>
     
 </body>
@@ -40,7 +33,7 @@
         methods: {
             async fetchData() {
                 try {
-                    const response = await fetch('http://localhost/api_juguetes/api/juguetes/obtener_nombres_juguetes');
+                    const response = await fetch('link de la api');
                     const data = await response.json();
                     this.juguetes = data.datos;
                 } catch (error) {

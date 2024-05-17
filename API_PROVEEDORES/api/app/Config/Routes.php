@@ -21,3 +21,5 @@ $routes->get('/empresa/api/obtener_nombre_empresa','EmpresaController::obtener_n
 $routes->get('/empresa/api/obtener_entregas','EmpresaController::obtener_entregas_repartidor');
 // 7.-
 $routes->get('/empresa/api/obtener_entregas_empresa','EmpresaController::obtener_entregas_hechas_por_empresa');
+// 8.-
+$routes->get('/empresa/api/nombres_empresas','EmpresaController::obtener_nombre_empresas');

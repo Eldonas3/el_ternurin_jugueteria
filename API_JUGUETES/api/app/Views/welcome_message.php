@@ -84,6 +84,11 @@
                     <td>/api/juguetes/obtener_nombres_juguetes</td>
                     <td>Retorna todos los nombres de los juguetes</td>
                 </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>/api/juguetes/nombres_proveedores</td>
+                    <td>Retorna todos los nombres de los proveedores</td>
+                </tr>
                 <!-- Agrega más filas según sea necesario -->
             </tbody>
         </table>

@@ -25,3 +25,6 @@ $routes->get('/api/juguetes/proveedor_juguete','JugueteController::getProveedore
 $routes->get('/api/juguetes/collecion_jueguete','JugueteController::getColeccionesPorJuguete');
 // 9.-
 $routes->get('/api/juguetes/obtener_nombres_juguetes','JugueteController::obtener_juguetes');
+// 10.-
+$routes->get('/api/juguetes/nombres_proveedores','JugueteController::obtener_nombres_proveedores');
+// 11.-

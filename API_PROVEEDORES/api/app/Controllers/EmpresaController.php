@@ -90,4 +90,16 @@ class EmpresaController extends Controller{
         $response->send();    
     }
 
+        // 8.-
+        public function obtener_nombre_empresas(){
+            $model = model('EmpresaModel');
+            $data['datos'] = $model->obtener_nombre_empresas();
+            $response = response();
+            $response->setStatusCode(Response::HTTP_OK);
+            $response->setBody(json_encode($data));
+            $response->setHeader('Content-Type','text/json');
+            $response->noCache();
+            $response->send(); 
+        }
+
 }

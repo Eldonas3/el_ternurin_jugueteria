@@ -47,12 +47,33 @@
 
     <!-- Contenido principal -->
     <div class="container">
-        <h1 class="text-center mt-5">El Ternurin Jugueteria</h1>
-        <div class="center mt-5">
-            <button class="btn btn-primary btn-lg btn-large"><img src="assets\images\carrito_ventas.png" alt="Ventas"></button>
-            <button class="btn btn-secondary btn-lg btn-large"><img src="assets\images\envios.png" alt="Envios"></button>
-            <button class="btn btn-success btn-lg btn-large"><img src="assets\images\inventario.png" alt="Inventario"></button>
-        </div>
+    <h1 class="text-center mt-5">El Ternurin Jugueteria</h1>
+    <div class="center mt-5">
+    <a href="<?=base_url('/envios/ver_juguetes'); ?>"> 
+    <button class="btn btn-large btn-success">Ver juguetes API</button>
+    </a>
+    <a href="<?=base_url('/envios/agregar_juguete'); ?>">
+    <button class="btn btn-large btn-success">Insertar Juguetes</button>  
+    </a>       
+    <a href="<?=base_url('/envios/agregar_proveedor'); ?>">
+    <button class="btn btn-large btn-success">Insertar Proveedores</button>
+    </a>  
+    </div>
+    </div>
+
+    <!-- Contenido no tan principal -->
+    <div class="container">
+    <div class="center mt-5">
+    <a href="<?=base_url('/envios/ver_juguetes'); ?>"> 
+    <button class="btn btn-large btn-success">Ver Juguetes BD Ternurin</button>
+    </a>
+    <a href="<?=base_url('/envios/agregar_juguete'); ?>">
+    <button class="btn btn-large btn-success">Ver Proveedores BD Ternurin</button>  
+    </a>       
+    <a href="<?=base_url('/envios/agregar_proveedor'); ?>">
+    <button class="btn btn-large btn-success">Ver precios Juguetes</button>
+    </a>
+    </div>
     </div>
 
     <!-- Bootstrap JS y jQuery (necesario para el funcionamiento de la barra de navegación) -->

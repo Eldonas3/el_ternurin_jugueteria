@@ -1,0 +1,96 @@
+CRITICAL - 2024-05-17 04:34:45 --> Undefined property: App\Controllers\Home::$input
+in APPPATH\Controllers\Home.php on line 21.
+ 1 APPPATH\Controllers\Home.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$input', 'D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\SISTEMA_EL_TERNURIN\\sistema_el_ternurin\\app\\Controllers\\Home.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->insertar_juguete()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\SISTEMA_EL_TERNURIN\\sistema_el_ternurin\\public\\index.php')
+ERROR - 2024-05-17 07:32:37 --> mysqli_sql_exception: Unknown column 'nombre_proveedor' in 'field list' in D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\app\Controllers\Home.php(62): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(919): App\Controllers\Home->insertar_proveedor()
+#6 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#10 {main}
+CRITICAL - 2024-05-17 07:32:37 --> Unknown column 'nombre_proveedor' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `proveedores` (`nombre_proveedor`, `nombre_empresa`) VALUES (:nombre_proveedor:, :nombre_empresa:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(62): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->insertar_proveedor()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\SISTEMA_EL_TERNURIN\\sistema_el_ternurin\\public\\index.php')
+ERROR - 2024-05-17 07:37:02 --> mysqli_sql_exception: Unknown column 'nombre' in 'field list' in D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\app\Controllers\Home.php(62): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(919): App\Controllers\Home->insertar_proveedor()
+#6 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#10 {main}
+CRITICAL - 2024-05-17 07:37:02 --> Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `proveedores` (`nombre`) VALUES (:nombre:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(62): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->insertar_proveedor()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\SISTEMA_EL_TERNURIN\\sistema_el_ternurin\\public\\index.php')
+ERROR - 2024-05-17 07:43:44 --> mysqli_sql_exception: Table 'jugueteria_el_ternurin.empresas' doesn't exist in D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\app\Controllers\Home.php(67): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(919): App\Controllers\Home->insertar_proveedor()
+#6 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#10 {main}
+CRITICAL - 2024-05-17 07:43:44 --> Table 'jugueteria_el_ternurin.empresas' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empresas` (`empresa_proveedora`) VALUES (:empresa_proveedora:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(67): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->insertar_proveedor()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\SISTEMA_EL_TERNURIN\\sistema_el_ternurin\\public\\index.php')
+ERROR - 2024-05-17 07:44:28 --> mysqli_sql_exception: Table 'jugueteria_el_ternurin.empresas' doesn't exist in D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\app\Controllers\Home.php(67): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(919): App\Controllers\Home->insertar_proveedor()
+#6 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\Universidad\TEC\Semestre VI\Topicos de bases de datos\El Ternurin Jugueteria\SISTEMA_EL_TERNURIN\sistema_el_ternurin\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#10 {main}
+CRITICAL - 2024-05-17 07:44:28 --> Table 'jugueteria_el_ternurin.empresas' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empresas` (`nombre`) VALUES (:nombre:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(67): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->insertar_proveedor()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre VI\\Topicos de bases de datos\\El Ternurin Jugueteria\\SISTEMA_EL_TERNURIN\\sistema_el_ternurin\\public\\index.php')
