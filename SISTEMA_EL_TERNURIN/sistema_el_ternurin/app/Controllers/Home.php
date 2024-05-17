@@ -25,6 +25,14 @@ class Home extends BaseController
         return view('envios/agregar_proveedores');
     }
 
+    public function agregar_precio(){
+        return view('envios/agregar_precio');
+    }
+
+    public function ver_productos(){
+        return view('envios/ver_productos');
+    }
+
     public function insertar_juguete()
     {
         $request = \Config\Services::request();
@@ -72,4 +80,23 @@ class Home extends BaseController
             echo json_encode(['status' => 'error', 'essage' => 'Nombre de proveedor y empresa son requeridos']);
         }
     }
+
+    public function obtener_productos(){
+    $db = \Config\Database::connect();
+    $query = $db->query('SELECT nombre FROM producto');
+    $productos = $query->getResultArray();
+    
+    return $this->response->setJSON($productos);
+}
+
+public function obtener_proveedores()
+{
+    $db = \Config\Database::connect();
+    $query = $db->query('SELECT * FROM proveedores');
+    $proveedores = $query->getResultArray();
+    
+    return $this->response->setJSON($proveedores);
+}
+
+
 }

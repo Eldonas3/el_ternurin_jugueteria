@@ -57,21 +57,18 @@
     </a>       
     <a href="<?=base_url('/envios/agregar_proveedor'); ?>">
     <button class="btn btn-large btn-success">Insertar Proveedores</button>
-    </a>  
+    </a>
     </div>
     </div>
 
     <!-- Contenido no tan principal -->
     <div class="container">
     <div class="center mt-5">
-    <a href="<?=base_url('/envios/ver_juguetes'); ?>"> 
+    <a href="<?=base_url('/api/ver_productos'); ?>"> 
     <button class="btn btn-large btn-success">Ver Juguetes BD Ternurin</button>
     </a>
-    <a href="<?=base_url('/envios/agregar_juguete'); ?>">
+    <a href="<?=base_url('/home/obtener_proveedores'); ?>">
     <button class="btn btn-large btn-success">Ver Proveedores BD Ternurin</button>  
-    </a>       
-    <a href="<?=base_url('/envios/agregar_proveedor'); ?>">
-    <button class="btn btn-large btn-success">Ver precios Juguetes</button>
     </a>
     </div>
     </div>
